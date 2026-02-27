@@ -436,7 +436,7 @@ h1 .outline {
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
 }
 
@@ -881,6 +881,18 @@ footer p {
   color: var(--lime);
 }
 
+/* ── ANIMATIONS ── */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* ── RESPONSIVE ── */
 @media (max-width: 820px) {
   .nav-links {
@@ -908,15 +920,37 @@ footer p {
     min-width: 50%;
   }
 
-  .about-strip {
-    flex-direction: column;
+  /* About: stack vertically and prevent overflow */
+  .services-grid {
+    grid-template-columns: 1fr;
   }
   .about-img-wrap {
     width: 100%;
     margin-bottom: 2rem;
   }
 }
-/* Animations */
+
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero {
+    min-height: auto;
+    padding-top: 5rem;
+  }
+  .hero-content {
+    padding-bottom: 1.5rem;
+  }
+  h1 {
+    font-size: 2.4rem;
+  }
+  .hero-sub {
+    display: none;
+  }
+  .hstat {
+    padding: 0.8rem 1rem;
+  }
+  .hstat-num {
+    font-size: 1.5rem;
+  }
+}
 
 @keyframes pulse {
   0%,
