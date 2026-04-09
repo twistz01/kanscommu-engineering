@@ -1,4 +1,3 @@
-// NAV scroll effect
 const navbar = document.getElementById("navbar");
 window.addEventListener("scroll", () => {
   navbar.classList.toggle("scrolled", window.scrollY > 50);
@@ -23,7 +22,6 @@ hamburger.addEventListener("click", () => {
   hamburger.classList.contains("open") ? closeMenu() : openMenu();
 });
 
-// Close menu when a nav link is clicked
 document.querySelectorAll(".menu-link").forEach((link) => {
   link.addEventListener("click", closeMenu);
 });
