@@ -4,7 +4,6 @@ window.addEventListener("scroll", () => {
   navbar.classList.toggle("scrolled", window.scrollY > 50);
 });
 
-// Hamburger toggle
 const hamburger = document.getElementById("hamburger");
 const mobileMenu = document.getElementById("mobileMenu");
 
