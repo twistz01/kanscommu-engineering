@@ -260,8 +260,7 @@ nav.scrolled {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 3rem;
-  /* color: var(--white); */
+  padding-bottom: 1.8rem;
 }
 
 .hero-badge {
@@ -277,6 +276,7 @@ nav.scrolled {
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--lime);
+  margin-top: 0.5rem;
   margin-bottom: 1.8rem;
   animation: fadeUp 0.8s ease both;
 }
